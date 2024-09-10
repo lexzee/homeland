@@ -70,6 +70,7 @@ export default function CustomerReviews() {
   return (
     <div className="relative flex items-center">
       <button
+        data-aos="fade-right"
         ref={prevButton}
         className={classNames(
           "mr-4 rounded-full bg-gradient-to-b from-brand to-transparent p-1",
@@ -82,10 +83,10 @@ export default function CustomerReviews() {
         <FaAngleLeft size={20} className="text-white" />
       </button>
 
-      <div className="flex-1 overflow-hidden" ref={emblaRef}>
-        <div className="flex items-center space-x-16">
+      <div className="flex-1 overflow-hidden" ref={emblaRef} data-aos="fade-up">
+        <div className="flex items-center justify-between">
           {reviews.map((review, index) => (
-            <div className="flex h-[28em] min-w-[400px] flex-col rounded-2xl border border-brand bg-white px-6 py-8 shadow-2xl drop-shadow-md">
+            <div className="mx-8 flex h-[28em] min-w-[500px] flex-col rounded-2xl border border-brand bg-white px-6 py-8 shadow-2xl drop-shadow-md lg:h-[28em] lg:min-w-[400px]">
               {/* Card Header */}
               <div className="flex items-center gap-4">
                 <div className="overflow-clip rounded-full">
@@ -113,6 +114,7 @@ export default function CustomerReviews() {
       </div>
 
       <button
+        data-aos="fade-left"
         ref={nextButton}
         className={classNames(
           "ml-4 rounded-full bg-gradient-to-b from-brand to-transparent p-1",

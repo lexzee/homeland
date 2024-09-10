@@ -66,7 +66,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="mx-auto box-border flex flex-col items-center justify-between selection:bg-brand selection:text-white">
+    <main className="font-poppins mx-auto box-border flex flex-col items-center justify-between selection:bg-brand selection:text-white">
       <header className="flex h-screen flex-col bg-hero-image bg-cover px-16 py-8">
         <div className="absolute left-0 top-0 -z-0 h-full w-full bg-gradient-to-b from-black/65 via-black/60 to-transparent"></div>
         {/* <Image className="object-cover" src={BG} alt="" width={100} /> */}
@@ -75,12 +75,12 @@ export default function Home() {
         </div>
 
         {/* Hero */}
-        <div className="z-10 flex h-full flex-col items-center justify-center gap-8 px-44 text-center text-white">
-          <h1 className="text-6xl font-bold leading-normal">
+        <div className="z-10 flex h-full flex-col items-center justify-center gap-8 text-center text-white">
+          <h1 className="px-60 font-sans text-6xl font-semibold leading-snug">
             Revolutionizing the Skies with Sustainable{" "}
             <span className="text-brand">Electric Hot-Air Balloons.</span>
           </h1>
-          <p className="text-md">
+          <p className="text-md px-[22rem]">
             Discover a new way to soar with our revolutionary electric hot-air
             balloons! Silent, eco-friendly, and breathtakingly beautiful, our
             balloons offer a sustainable adventure that lets you explore the
@@ -127,15 +127,19 @@ export default function Home() {
         </div>
 
         {/* Intro details */}
-        <div className="flex columns-2 gap-32">
+        <div className="grid w-[100%] grid-cols-2 gap-28">
           {/* IMage */}
-          <div className="w-full" data-aos="fade-right">
+          <div
+            className="flex items-center overflow-clip rounded-2xl md:h-[30rem] md:w-[30rem] lg:h-[42rem] lg:w-[42rem]"
+            data-aos="fade-right"
+          >
             <Image
               src={IntImage}
               alt="Just some balloon"
-              width={540}
-              height={595}
-              className="rounded-3xl"
+              className="w-full scale-150"
+              // width={540}
+              // height={595}
+              // className="rounded-3xl"
             />
           </div>
 
@@ -165,7 +169,7 @@ export default function Home() {
       </div>
 
       {/* Features */}
-      <div className="mt-24 flex w-full flex-col bg-[#FCF7EE] px-32 py-8 text-black">
+      <div className="mt-24 flex w-full flex-col bg-[#FCF7EE] px-32 py-16 text-black">
         {/* Title */}
         <h2 className="text-center text-4xl font-semibold">Our Features</h2>
 
@@ -240,12 +244,12 @@ export default function Home() {
           {/* First Column */}
           <div
             data-aos="fade-right"
-            className="h-[52rem] overflow-clip rounded-[2rem]"
+            className="overflow-clip rounded-[2rem] md:h-[40rem] lg:h-[52rem]"
           >
             <Image
               src={Adventurer}
               alt="Adventurous Spirit"
-              className="-mt-44 w-full"
+              className="w-full md:-mt-20 lg:-mt-44"
             />
           </div>
 
@@ -253,15 +257,23 @@ export default function Home() {
           <div className="flex flex-col justify-between">
             <div
               data-aos="fade-left"
-              className="h-[24rem] overflow-clip rounded-[2rem]"
+              className="overflow-clip rounded-[2rem] md:h-[18rem] lg:h-[24rem]"
             >
-              <Image src={Ballon1} alt="Long Shot" className="-mt-20 w-full" />
+              <Image
+                src={Ballon1}
+                alt="Long Shot"
+                className="w-full md:m-0 lg:-mt-20"
+              />
             </div>
             <div
               data-aos="fade-left"
-              className="h-[24rem] overflow-clip rounded-[2rem]"
+              className="overflow-clip rounded-[2rem] md:h-[18rem] lg:h-[24rem]"
             >
-              <Image src={Ballon2} alt="Vibrant" className="-mt-20 w-full" />
+              <Image
+                src={Ballon2}
+                alt="Vibrant"
+                className="w-full md:m-0 lg:-mt-20"
+              />
             </div>
           </div>
         </div>
@@ -282,7 +294,10 @@ export default function Home() {
           {/* Prop System */}
           <div className="grid w-full justify-items-center gap-8">
             {/* Image */}
-            <div className="h-48 w-48 overflow-clip rounded-3xl">
+            <div
+              className="h-48 w-48 overflow-clip rounded-3xl"
+              data-aos="fade-up"
+            >
               <Image
                 src={PropSyst}
                 alt="Propulsion System"
@@ -295,14 +310,14 @@ export default function Home() {
               Electric Propulsion System:
             </h3>
             <ul className="flex list-disc flex-col gap-4">
-              <li>
+              <li data-aos="fade-right">
                 Instead of using propane burners like traditional hot-air
                 balloons, electric hot-air balloons use an electric heating
                 system. This system is powered by batteries or a renewable
                 energy source like solar panels.
               </li>
 
-              <li>
+              <li data-aos="fade-right">
                 The electric heater warms the air inside the balloon, causing it
                 to rise, just like in conventional balloons.
               </li>
@@ -312,7 +327,10 @@ export default function Home() {
           {/* Battery Tech */}
           <div className="grid w-full justify-items-center gap-8">
             {/* Image */}
-            <div className="h-48 w-48 overflow-clip rounded-3xl">
+            <div
+              className="h-48 w-48 overflow-clip rounded-3xl"
+              data-aos="fade-up"
+            >
               <Image
                 src={BatteryTech}
                 alt="Battery Technology"
@@ -325,13 +343,13 @@ export default function Home() {
               Advanced Battery Technology:
             </h3>
             <ul className="flex list-disc flex-col gap-4">
-              <li>
+              <li data-aos="fade-left">
                 High-capacity batteries store energy to power the electric
                 heater. These batteries are designed to be lightweight yet
                 powerful enough to sustain flight for extended periods.
               </li>
 
-              <li>
+              <li data-aos="fade-left">
                 They can be recharged between flights, often using renewable
                 energy sources, further reducing the environmental impact.
               </li>
@@ -348,24 +366,35 @@ export default function Home() {
           <p className="font-light">
             Email or call to learn how to get your own balloon
           </p>
-          <a href="mailto:homeland@gmail.com" className="font-medium">
+          <a
+            href="mailto:homeland@gmail.com"
+            className="font-medium"
+            data-aos="fade-right"
+          >
             Homeland@gmail.com
           </a>
-          <a href="tel:32333334545" className="font-medium">
+          <a
+            href="tel:32333334545"
+            className="font-medium"
+            data-aos="fade-right"
+          >
             323-3333-4545
           </a>
         </div>
 
         {/* Image */}
-        <div className="h-[38rem] w-full overflow-clip rounded-3xl">
+        <div
+          data-aos="fade-left"
+          className="h-[32rem] w-full overflow-clip rounded-3xl"
+        >
           <Image src={ContactDecor} alt="Contact Us" className="w-full" />
         </div>
       </div>
 
       {/* HELP */}
-      <div className="mt-24 flex w-full flex-col gap-16 bg-[#FCF7EE] px-32 py-8 text-black">
+      <div className="mt-24 flex w-full flex-col gap-16 bg-[#FCF7EE] px-32 py-16 text-black">
         {/* Title */}
-        <h2 className="text-center text-4xl font-semibold">Help Center</h2>
+        <h2 className="las text-center text-4xl font-semibold">Help Center</h2>
 
         {/* FAQs */}
         {faqs.map((faq, index) => (
@@ -387,11 +416,11 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <div className="mt-24 flex w-full flex-col justify-between bg-brand px-32 py-8 text-xl text-white">
+      <div className="bg-brand2 mt-24 flex w-full flex-col justify-between py-8 text-lg text-white md:px-16 lg:px-32 lg:text-xl">
         {/* Details */}
-        <div className="flex w-full space-x-6">
+        <div className="grid grid-cols-5 gap-16 lg:gap-32">
           {/* col1 */}
-          <div className="grid gap-8">
+          <div className="col-span-2 flex flex-col space-y-5">
             <a
               href="/"
               className="flex w-full items-center gap-2 text-4xl font-semibold"
@@ -409,7 +438,7 @@ export default function Home() {
           </div>
 
           {/* col2 */}
-          <div className="mt-8 grid gap-8">
+          <div className="mt-10 flex flex-col space-y-5 lg:mt-16">
             <h4 className="font-semibold">Company</h4>
             <p>About Us</p>
             <p>Product</p>
@@ -417,7 +446,7 @@ export default function Home() {
           </div>
 
           {/* col3 */}
-          <div className="mt-8 grid gap-8">
+          <div className="mt-10 flex flex-col space-y-5 lg:mt-16">
             <h4 className="font-semibold">Support</h4>
             <p>Service</p>
             <p>Contact Us</p>
@@ -426,7 +455,7 @@ export default function Home() {
           </div>
 
           {/* col4 */}
-          <div className="mt-8 grid gap-8">
+          <div className="mt-10 flex flex-col space-y-5 lg:mt-16">
             <h4 className="font-semibold">Contact</h4>
             <p>222-233-1111</p>
             <p>Homeland@gmail.com</p>
@@ -434,7 +463,7 @@ export default function Home() {
         </div>
 
         {/* copyright */}
-        <div className="flex w-full items-center justify-between">
+        <div className="mb-8 mt-16 flex w-full justify-center text-center">
           <p className="font-semibold">
             Copyright © 2024 Homeland Company S.L. All rights reserved.
           </p>

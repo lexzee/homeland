@@ -4,7 +4,8 @@ const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx,css}",
+    "./app/global.css",
   ],
   theme: {
     extend: {
@@ -17,6 +18,11 @@ const config: Config = {
       },
       colors: {
         brand: "#CD7F32",
+        brand2: "#7C3924",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        sans: ["ClashDisplay-Variable", "sans-serif"],
       },
     },
   },
