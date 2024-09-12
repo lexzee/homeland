@@ -67,7 +67,7 @@ export default function Home() {
 
   return (
     <main className="mx-auto box-border flex flex-col items-center justify-between font-poppins selection:bg-brand selection:text-white">
-      <header className="flex h-screen flex-col bg-hero-image bg-cover px-16 py-8">
+      <header className="flex h-screen flex-col bg-hero-image bg-cover px-12 py-8 md:px-14 lg:px-16">
         <div className="absolute left-0 top-0 -z-0 h-full w-screen bg-gradient-to-b from-black/65 via-black/60 to-transparent"></div>
         {/* <Image className="object-cover" src={BG} alt="" width={100} /> */}
         <div className="z-10">
@@ -97,7 +97,7 @@ export default function Home() {
       {/* Intro */}
       <div
         data-aos="fade-up"
-        className="flex w-full flex-col px-32 py-8 text-xl"
+        className="flex w-full flex-col px-16 py-8 text-xl md:px-24 lg:px-32"
       >
         {/* Absolute positioned metrics bar */}
         <div className="-mt-16 mb-28 flex w-full columns-3 items-center justify-center rounded-2xl bg-white p-4 text-center shadow-2xl shadow-gray-200 md:-mt-20 md:mb-32 md:p-6 lg:-mt-24 lg:mb-36 lg:p-8">
@@ -166,7 +166,7 @@ export default function Home() {
       </div>
 
       {/* Features */}
-      <div className="mt-24 flex w-full flex-col bg-[#FCF7EE] px-32 py-16 text-black">
+      <div className="mt-24 flex w-full flex-col bg-[#FCF7EE] px-16 py-16 text-black md:px-24 lg:px-32">
         {/* Title */}
         <h2 className="text-center text-2xl font-semibold md:text-3xl lg:text-4xl">
           Our Features
@@ -236,7 +236,7 @@ export default function Home() {
       </div>
 
       {/* Visuals */}
-      <div className="mt-24 flex w-full flex-col gap-16 px-32 py-8">
+      <div className="mt-24 flex w-full flex-col gap-16 px-16 py-8 md:px-24 lg:px-32">
         {/* Title and CTA */}
         <div className="flex w-full items-center justify-between">
           <h2 className="text-2xl font-semibold text-black md:text-3xl lg:text-4xl">
@@ -287,7 +287,7 @@ export default function Home() {
       </div>
 
       {/* How it Works */}
-      <div className="mt-24 flex w-full flex-col gap-16 bg-[#FCF7EE] px-32 py-8 text-black">
+      <div className="mt-24 flex w-full flex-col gap-16 bg-[#FCF7EE] px-16 py-8 text-black md:px-24 lg:px-32">
         {/* Title CTA */}
         <div className="flex w-full items-center justify-between">
           <h2 className="text-2xl font-semibold text-black md:text-3xl lg:text-4xl">
@@ -368,7 +368,7 @@ export default function Home() {
       </div>
 
       {/* Contact us */}
-      <div className="mt-24 flex columns-2 justify-center gap-32 px-32 py-8 text-xl text-black md:text-2xl lg:text-3xl">
+      <div className="mt-24 flex columns-2 justify-center gap-32 px-16 py-8 text-xl text-black md:px-24 md:text-2xl lg:px-32 lg:text-3xl">
         {/* Text */}
         <div className="flex w-full flex-col justify-center gap-8">
           <h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
@@ -403,7 +403,7 @@ export default function Home() {
       </div>
 
       {/* HELP */}
-      <div className="mt-24 flex w-full flex-col gap-16 bg-[#FCF7EE] px-32 py-16 text-black">
+      <div className="mt-24 flex w-full flex-col gap-16 bg-[#FCF7EE] px-16 py-16 text-black md:px-24 lg:px-32">
         {/* Title */}
         <h2 className="las text-center text-2xl font-semibold md:text-3xl lg:text-4xl">
           Help Center
@@ -416,7 +416,7 @@ export default function Home() {
       </div>
 
       {/* Reviews */}
-      <div className="mt-24 flex w-full flex-col gap-16 px-32 py-8 text-black">
+      <div className="mt-24 flex w-full flex-col gap-16 px-16 py-8 text-black md:px-24 lg:px-32">
         {/* Title */}
         <h2 className="text-center text-2xl font-semibold md:text-3xl lg:text-4xl">
           See What other customers had to say
