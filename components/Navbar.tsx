@@ -9,14 +9,14 @@ export default function Navbar() {
       {/* Logo */}
       <a
         href="/"
-        className="flex w-full items-center gap-2 text-4xl font-semibold"
+        className="flex w-full items-center gap-2 text-2xl font-semibold md:text-3xl lg:text-4xl"
       >
-        <Image src={Logo} alt="Homeland" width={40} height={40} />
+        <Image src={Logo} className="w-6 md:w-8 lg:w-10" alt="Homeland" />
         <h1>Homeland</h1>
       </a>
 
       {/* Navigation links */}
-      <ul className="box-content flex w-full items-center justify-center gap-12 rounded-full bg-white bg-opacity-10 px-14 py-4 text-lg text-gray-200">
+      <ul className="box-content flex w-full items-center justify-center gap-8 rounded-full bg-white bg-opacity-10 px-10 py-3 text-lg text-gray-200 md:gap-10 md:px-12 lg:gap-12 lg:px-14 lg:py-4">
         <li className="hover:font-semibold hover:text-white">
           <a href="/">Home</a>
         </li>

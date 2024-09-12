@@ -9,7 +9,7 @@ export default function Button({
 }>) {
   return (
     <button
-      className={`flex items-center gap-1 rounded-md bg-brand px-6 py-3 text-base font-medium text-white hover:bg-amber-700 ${className}`}
+      className={`flex items-center gap-1 rounded-md bg-brand px-4 py-2 text-base font-medium text-white hover:bg-amber-700 lg:px-6 lg:py-3 ${className}`}
       {...props}
     >
       {children}

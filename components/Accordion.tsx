@@ -14,20 +14,21 @@ export default function Accordion({
   return (
     <div className="border-b border-gray-500" data-aos="fade-up">
       <button
-        className="flex w-full items-center justify-between p-4 text-left text-lg font-semibold focus:outline-none"
+        className="flex w-full items-center justify-between p-4 text-left text-lg font-semibold focus:outline-none md:text-xl lg:text-2xl"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="flex items-center gap-8 text-2xl">
+        <span className="flex items-center gap-8">
           <FaDotCircle size={10} />
-          <h3 className="text-2xl font-medium">{title}</h3>
+          <h3 className="font-medium">{title}</h3>
         </span>
-        <span className="text-2xl">
-          {isOpen ? <FaAngleUp /> : <FaAngleDown />}
-        </span>
+        <span>{isOpen ? <FaAngleUp /> : <FaAngleDown />}</span>
       </button>
 
       {isOpen && (
-        <div data-aos="fade-up" className="px-2 pb-4 text-xl">
+        <div
+          data-aos="fade-down"
+          className="px-2 pb-4 text-base md:text-lg lg:text-xl"
+        >
           {content}
         </div>
       )}

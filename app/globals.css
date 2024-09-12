@@ -45,4 +45,169 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* @media (min-width: 640px) {
+    .text-6xl {
+      @apply text-[32px];
+    }
+    .text-4xl {
+      @apply text-[24px];
+    }
+    .text-3xl {
+      @apply text-[20px];
+    }
+    .text-2xl {
+      @apply text-[18px];
+    }
+    .text-xl {
+      @apply text-[16px];
+    }
+    .text-lg {
+      @apply text-[14px];
+    }
+    .text-base {
+      @apply text-[12px];
+    }
+    .text-sm {
+      @apply text-[10px];
+    }
+  }
+
+  @media (min-width: 768px) {
+    .text-6xl {
+      @apply text-[36px];
+    }
+
+    .text-4xl {
+      @apply text-[28px];
+    }
+
+    .text-3xl {
+      @apply text-[24px];
+    }
+
+    .text-2xl {
+      @apply text-[20px];
+    }
+
+    .text-xl {
+      @apply text-[18px];
+    }
+
+    .text-lg {
+      @apply text-[16px];
+    }
+
+    .text-base {
+      @apply text-[14px];
+    }
+
+    .text-sm {
+      @apply text-[12px];
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .text-6xl {
+      @apply text-[40px];
+    }
+
+    .text-4xl {
+      @apply text-[32px];
+    }
+
+    .text-3xl {
+      @apply text-[28px];
+    }
+
+    .text-2xl {
+      @apply text-[24px];
+    }
+
+    .text-xl {
+      @apply text-[20px];
+    }
+
+    .text-lg {
+      @apply text-[18px];
+    }
+
+    .text-base {
+      @apply text-[16px];
+    }
+
+    .text-sm {
+      @apply text-[14px];
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .text-6xl {
+      @apply text-[48px];
+    }
+
+    .text-4xl {
+      @apply text-[36px];
+    }
+
+    .text-3xl {
+      @apply text-[32px];
+    }
+
+    .text-2xl {
+      @apply text-[28px];
+    }
+
+    .text-xl {
+      @apply text-[24px];
+    }
+
+    .text-lg {
+      @apply text-[20px];
+    }
+
+    .text-base {
+      @apply text-[18px];
+    }
+
+    .text-sm {
+      @apply text-[16px];
+    }
+
+  }
+
+  @media (min-width: 1536px) {
+    .text-6xl {
+      @apply text-[56px];
+    }
+
+    .text-4xl {
+      @apply text-[40px];
+    }
+
+    .text-3xl {
+      @apply text-[36px];
+    }
+
+    .text-2xl {
+      @apply text-[32px];
+    }
+
+    .text-xl {
+      @apply text-[28px];
+    }
+
+    .text-lg {
+      @apply text-[24px];
+    }
+
+    .text-base {
+      @apply text-[20px];
+    }
+
+    .text-sm {
+      @apply text-[18px];
+    }
+
+  } */
 }

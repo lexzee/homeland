@@ -93,21 +93,26 @@ export default function CustomerReviews() {
                   <Image
                     src={review.image}
                     alt="Profile"
-                    width={75}
-                    height={75}
+                    className="h-16 w-16 rounded-full md:h-20 md:w-20 lg:h-24 lg:w-24"
                   />
                 </div>
                 <div className="grid gap-2">
-                  <h3 className="text-[24px] font-semibold">{review.name}</h3>
-                  <p className="text-xl">{review.location}</p>
+                  <h3 className="md:text[20px] text-[16px] font-semibold lg:text-[24px]">
+                    {review.name}
+                  </h3>
+                  <p className="text-base md:text-lg lg:text-xl">
+                    {review.location}
+                  </p>
                 </div>
               </div>
 
               {/* Review */}
-              <h4 className="mt-4 text-[24px] font-semibold">
+              <h4 className="md:text[20px] mt-4 text-[16px] font-semibold lg:text-[24px]">
                 "{review.reviewHeader}"
               </h4>
-              <p className="mt-4 text-xl">"{review.review}"</p>
+              <p className="mt-4 text-base md:text-lg lg:text-xl">
+                "{review.review}"
+              </p>
             </div>
           ))}
         </div>

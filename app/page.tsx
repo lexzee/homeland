@@ -66,9 +66,9 @@ export default function Home() {
   ];
 
   return (
-    <main className="font-poppins mx-auto box-border flex flex-col items-center justify-between selection:bg-brand selection:text-white">
+    <main className="mx-auto box-border flex flex-col items-center justify-between font-poppins selection:bg-brand selection:text-white">
       <header className="flex h-screen flex-col bg-hero-image bg-cover px-16 py-8">
-        <div className="absolute left-0 top-0 -z-0 h-full w-full bg-gradient-to-b from-black/65 via-black/60 to-transparent"></div>
+        <div className="absolute left-0 top-0 -z-0 h-full w-screen bg-gradient-to-b from-black/65 via-black/60 to-transparent"></div>
         {/* <Image className="object-cover" src={BG} alt="" width={100} /> */}
         <div className="z-10">
           <Navbar />
@@ -76,11 +76,11 @@ export default function Home() {
 
         {/* Hero */}
         <div className="z-10 flex h-full flex-col items-center justify-center gap-8 text-center text-white">
-          <h1 className="px-60 font-sans text-6xl font-semibold leading-snug">
+          <h1 className="px-44 font-sans text-3xl font-semibold leading-snug md:px-52 md:text-5xl lg:px-60 lg:text-6xl">
             Revolutionizing the Skies with Sustainable{" "}
             <span className="text-brand">Electric Hot-Air Balloons.</span>
           </h1>
-          <p className="text-md px-[22rem]">
+          <p className="text-md px-44 md:px-52 lg:px-60">
             Discover a new way to soar with our revolutionary electric hot-air
             balloons! Silent, eco-friendly, and breathtakingly beautiful, our
             balloons offer a sustainable adventure that lets you explore the
@@ -100,10 +100,10 @@ export default function Home() {
         className="flex w-full flex-col px-32 py-8 text-xl"
       >
         {/* Absolute positioned metrics bar */}
-        <div className="-mt-24 mb-36 flex w-full columns-3 items-center justify-center rounded-2xl bg-white p-8 text-center shadow-2xl shadow-gray-200">
+        <div className="-mt-16 mb-28 flex w-full columns-3 items-center justify-center rounded-2xl bg-white p-4 text-center shadow-2xl shadow-gray-200 md:-mt-20 md:mb-32 md:p-6 lg:-mt-24 lg:mb-36 lg:p-8">
           {/* Subscribers */}
           <div className="flex w-full flex-col gap-1 text-black">
-            <h2 className="text-4xl font-semibold">
+            <h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
               100k<span className="text-brand">+</span>
             </h2>
             <p>Subscribers</p>
@@ -111,7 +111,7 @@ export default function Home() {
 
           {/* Users */}
           <div className="flex w-full flex-col gap-1 text-black">
-            <h2 className="text-4xl font-semibold">
+            <h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
               20k<span className="text-brand">+</span>
             </h2>
             <p>Active Users</p>
@@ -119,7 +119,7 @@ export default function Home() {
 
           {/* Sales */}
           <div className="flex w-full flex-col gap-1 text-black">
-            <h2 className="text-4xl font-semibold">
+            <h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
               $2M<span className="text-brand">+</span>
             </h2>
             <p>Product Sold</p>
@@ -137,9 +137,6 @@ export default function Home() {
               src={IntImage}
               alt="Just some balloon"
               className="w-full scale-150"
-              // width={540}
-              // height={595}
-              // className="rounded-3xl"
             />
           </div>
 
@@ -148,7 +145,7 @@ export default function Home() {
             data-aos="fade-left"
             className="flex w-full flex-col items-start justify-center gap-8 text-left text-black"
           >
-            <h2 className="text-4xl font-semibold">
+            <h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
               Movement made faster and easier
             </h2>
             <p>
@@ -171,15 +168,19 @@ export default function Home() {
       {/* Features */}
       <div className="mt-24 flex w-full flex-col bg-[#FCF7EE] px-32 py-16 text-black">
         {/* Title */}
-        <h2 className="text-center text-4xl font-semibold">Our Features</h2>
+        <h2 className="text-center text-2xl font-semibold md:text-3xl lg:text-4xl">
+          Our Features
+        </h2>
 
         {/* Details */}
-        <div className="grid columns-2 grid-cols-2 gap-x-32 gap-y-16 py-16 text-xl">
+        <div className="grid columns-2 grid-cols-2 gap-x-32 gap-y-16 py-16 text-base md:text-lg lg:text-xl">
           {/* feature 1 */}
           <div data-aos="fade-right" className="flex w-full flex-col gap-6">
             {/* Icon */}
             <FaCog className="text-amber-700" size={30} />
-            <h3 className="text-2xl font-semibold">Automatic Controls</h3>
+            <h3 className="text-lg font-semibold md:text-xl lg:text-2xl">
+              Automatic Controls
+            </h3>
             <p>
               Electric systems often come with advanced automated controls that
               can help maintain optimal temperature and altitude more precisely,
@@ -191,7 +192,9 @@ export default function Home() {
           <div data-aos="fade-left" className="flex w-full flex-col gap-6">
             {/* Icon */}
             <FaGauge className="text-amber-700" size={30} />
-            <h3 className="text-2xl font-semibold">Real-Time Monitoring</h3>
+            <h3 className="text-lg font-semibold md:text-xl lg:text-2xl">
+              Real-Time Monitoring
+            </h3>
             <p>
               Many electric systems offer real-time monitoring of critical
               parameters, such as temperature and pressure, which can provide
@@ -204,7 +207,7 @@ export default function Home() {
           <div data-aos="fade-right" className="flex w-full flex-col gap-6">
             {/* Icon */}
             <FaCompass className="text-amber-700" size={30} />
-            <h3 className="text-2xl font-semibold">
+            <h3 className="text-lg font-semibold md:text-xl lg:text-2xl">
               Advanced Navigation and Communication
             </h3>
             <p>
@@ -219,7 +222,9 @@ export default function Home() {
           <div data-aos="fade-left" className="flex w-full flex-col gap-6">
             {/* Icon */}
             <FaEarthAmericas className="text-amber-700" size={30} />
-            <h3 className="text-2xl font-semibold">Eco-Friendly Operation</h3>
+            <h3 className="text-lg font-semibold md:text-xl lg:text-2xl">
+              Eco-Friendly Operation
+            </h3>
             <p>
               By using electricity, these systems contribute to a cleaner
               environment, which indirectly improves safety by reducing
@@ -234,7 +239,9 @@ export default function Home() {
       <div className="mt-24 flex w-full flex-col gap-16 px-32 py-8">
         {/* Title and CTA */}
         <div className="flex w-full items-center justify-between">
-          <h2 className="text-4xl font-semibold text-black">Visuals</h2>
+          <h2 className="text-2xl font-semibold text-black md:text-3xl lg:text-4xl">
+            Visuals
+          </h2>
           <Button>
             See More <FaArrowRight />
           </Button>
@@ -244,12 +251,12 @@ export default function Home() {
           {/* First Column */}
           <div
             data-aos="fade-right"
-            className="overflow-clip rounded-[2rem] md:h-[40rem] lg:h-[52rem]"
+            className="h-[18rem] overflow-clip rounded-[2rem] md:h-[40rem] lg:h-[52rem]"
           >
             <Image
               src={Adventurer}
               alt="Adventurous Spirit"
-              className="w-full md:-mt-20 lg:-mt-44"
+              className="-mt-14 w-full md:-mt-20 lg:-mt-44"
             />
           </div>
 
@@ -257,22 +264,22 @@ export default function Home() {
           <div className="flex flex-col justify-between">
             <div
               data-aos="fade-left"
-              className="overflow-clip rounded-[2rem] md:h-[18rem] lg:h-[24rem]"
+              className="h-[8rem] overflow-clip rounded-[2rem] md:h-[14rem] lg:h-[24rem]"
             >
               <Image
                 src={Ballon1}
                 alt="Long Shot"
-                className="w-full md:m-0 lg:-mt-20"
+                className="lg:-mt-18 -mt-10 w-full md:-mt-12"
               />
             </div>
             <div
               data-aos="fade-left"
-              className="overflow-clip rounded-[2rem] md:h-[18rem] lg:h-[24rem]"
+              className="h-[8rem] overflow-clip rounded-[2rem] md:h-[14rem] lg:h-[24rem]"
             >
               <Image
                 src={Ballon2}
                 alt="Vibrant"
-                className="w-full md:m-0 lg:-mt-20"
+                className="lg:-mt-18 -mt-10 w-full md:-mt-12"
               />
             </div>
           </div>
@@ -283,14 +290,16 @@ export default function Home() {
       <div className="mt-24 flex w-full flex-col gap-16 bg-[#FCF7EE] px-32 py-8 text-black">
         {/* Title CTA */}
         <div className="flex w-full items-center justify-between">
-          <h2 className="text-4xl font-semibold text-black">How it Works</h2>
+          <h2 className="text-2xl font-semibold text-black md:text-3xl lg:text-4xl">
+            How it Works
+          </h2>
           <Button>
             Read All <FaArrowRight />
           </Button>
         </div>
 
         {/* Details */}
-        <div className="grid grid-cols-2 gap-48 text-xl">
+        <div className="grid grid-cols-2 gap-48 text-base md:text-lg lg:text-xl">
           {/* Prop System */}
           <div className="grid w-full justify-items-center gap-8">
             {/* Image */}
@@ -306,7 +315,7 @@ export default function Home() {
             </div>
 
             {/* Text */}
-            <h3 className="text-2xl font-medium">
+            <h3 className="text-xl font-medium lg:text-2xl">
               Electric Propulsion System:
             </h3>
             <ul className="flex list-disc flex-col gap-4">
@@ -339,7 +348,7 @@ export default function Home() {
             </div>
 
             {/* Text */}
-            <h3 className="text-2xl font-medium">
+            <h3 className="text-xl font-medium lg:text-2xl">
               Advanced Battery Technology:
             </h3>
             <ul className="flex list-disc flex-col gap-4">
@@ -359,10 +368,12 @@ export default function Home() {
       </div>
 
       {/* Contact us */}
-      <div className="mt-24 flex columns-2 justify-center gap-32 px-32 py-8 text-3xl text-black">
+      <div className="mt-24 flex columns-2 justify-center gap-32 px-32 py-8 text-xl text-black md:text-2xl lg:text-3xl">
         {/* Text */}
         <div className="flex w-full flex-col justify-center gap-8">
-          <h2 className="text-4xl font-semibold">Contact Us</h2>
+          <h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
+            Contact Us
+          </h2>
           <p className="font-light">
             Email or call to learn how to get your own balloon
           </p>
@@ -394,7 +405,9 @@ export default function Home() {
       {/* HELP */}
       <div className="mt-24 flex w-full flex-col gap-16 bg-[#FCF7EE] px-32 py-16 text-black">
         {/* Title */}
-        <h2 className="las text-center text-4xl font-semibold">Help Center</h2>
+        <h2 className="las text-center text-2xl font-semibold md:text-3xl lg:text-4xl">
+          Help Center
+        </h2>
 
         {/* FAQs */}
         {faqs.map((faq, index) => (
@@ -405,7 +418,7 @@ export default function Home() {
       {/* Reviews */}
       <div className="mt-24 flex w-full flex-col gap-16 px-32 py-8 text-black">
         {/* Title */}
-        <h2 className="text-center text-4xl font-semibold">
+        <h2 className="text-center text-2xl font-semibold md:text-3xl lg:text-4xl">
           See What other customers had to say
         </h2>
 
@@ -416,14 +429,14 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <div className="bg-brand2 mt-24 flex w-full flex-col justify-between py-8 text-lg text-white md:px-16 lg:px-32 lg:text-xl">
+      <div className="mt-24 flex w-full flex-col justify-between bg-brand2 py-8 text-lg text-white md:px-16 lg:px-32 lg:text-xl">
         {/* Details */}
         <div className="grid grid-cols-5 gap-16 lg:gap-32">
           {/* col1 */}
           <div className="col-span-2 flex flex-col space-y-5">
             <a
               href="/"
-              className="flex w-full items-center gap-2 text-4xl font-semibold"
+              className="flex w-full items-center gap-2 text-2xl font-semibold md:text-3xl lg:text-4xl"
             >
               <Image src={Logo} alt="Homeland" width={40} height={40} />
               <h4>Homeland</h4>
@@ -438,7 +451,7 @@ export default function Home() {
           </div>
 
           {/* col2 */}
-          <div className="mt-10 flex flex-col space-y-5 lg:mt-16">
+          <div className="mt-10 flex flex-col space-y-5 md:mt-14 lg:mt-16">
             <h4 className="font-semibold">Company</h4>
             <p>About Us</p>
             <p>Product</p>
@@ -446,7 +459,7 @@ export default function Home() {
           </div>
 
           {/* col3 */}
-          <div className="mt-10 flex flex-col space-y-5 lg:mt-16">
+          <div className="mt-10 flex flex-col space-y-5 md:mt-14 lg:mt-16">
             <h4 className="font-semibold">Support</h4>
             <p>Service</p>
             <p>Contact Us</p>
@@ -455,7 +468,7 @@ export default function Home() {
           </div>
 
           {/* col4 */}
-          <div className="mt-10 flex flex-col space-y-5 lg:mt-16">
+          <div className="mt-10 flex flex-col space-y-5 md:mt-14 lg:mt-16">
             <h4 className="font-semibold">Contact</h4>
             <p>222-233-1111</p>
             <p>Homeland@gmail.com</p>
